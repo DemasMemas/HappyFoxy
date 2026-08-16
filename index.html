@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Happy Foxy English Club в Балашихе: английский для детей от 4 лет, школьников, подростков и взрослых."
+    />
+    <title>Happy Foxy English Club</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Happy Foxy English Club">
+          <img class="brand-logo" src="./media/logo/Лого.png" alt="Happy Foxy" />
+          <span class="brand-text">
+            <strong>Happy Foxy</strong>
+            <small>English Club</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" id="site-navigation" aria-label="Основная навигация">
+          <a href="#about">О нас</a>
+          <a href="#programs">Программы</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#teachers">Преподаватели</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+          Меню
+        </button>
+
+        <a class="header-cta" href="#lead-form">Оставить заявку</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Английский с Happy Foxy — это весело!</p>
+            <h1>Студия английского языка в Балашихе для детей и взрослых</h1>
+            <p class="lead">
+              Студия английского языка Happy Foxy English Club в Железнодорожном.
+              Для детей от 4 лет и взрослых весело и интересно.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-secondary" href="#programs">Смотреть программы</a>
+              <a class="button button-ghost" href="tel:+79104906958">Позвонить</a>
+            </div>
+
+            <form class="lead-form" id="lead-form" action="./send.php" method="post">
+              <div class="lead-form-header">
+                <span class="lead-form-kicker">Бесплатная диагностика</span>
+                <p>Оставьте заявку, и мы свяжемся с вами по телефону.</p>
+              </div>
+
+              <div class="lead-form-grid">
+                <label class="field">
+                  <span>Имя</span>
+                  <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required />
+                </label>
+
+                <label class="field">
+                  <span>Телефон</span>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+7 (___) ___-__-__"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    required
+                  />
+                </label>
+
+                <label class="field field-wide">
+                  <span>Что интересует</span>
+                  <select name="goal" required>
+                    <option value="" selected disabled>Выберите направление</option>
+                    <option>Английский для малыша</option>
+                    <option>Подготовка к школе</option>
+                    <option>Школьный английский</option>
+                    <option>ОГЭ / ЕГЭ</option>
+                    <option>Английский для взрослых</option>
+                    <option>Онлайн-занятия</option>
+                  </select>
+                </label>
+
+                <label class="field field-wide">
+                  <span>Комментарий <small>(необязательно)</small></span>
+                  <textarea name="comment" rows="3" placeholder="Например, возраст ребенка или удобное время для связи"></textarea>
+                </label>
+              </div>
+
+              <button class="button button-primary button-submit" type="submit">
+                Отправить заявку
+              </button>
+              <p class="form-note" id="form-status" role="status" aria-live="polite">
+                Заявка будет отправлена на электронную почту Happy Foxy.
+              </p>
+            </form>
+
+            <div class="hero-points">
+              <div class="point-card">
+                <strong>4+</strong>
+                <span>дети начинают учить английский через игру</span>
+              </div>
+              <div class="point-card">
+                <strong>6</strong>
+                <span>человек максимум в группе</span>
+              </div>
+              <div class="point-card">
+                <strong>ежедневно</strong>
+                <span>занятия с 09:00 до 20:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-image-frame">
+              <img src="./media/logo/Личная аватарка соц сети.png" alt="Преподаватель у доски в Happy Foxy English Club" />
+            </div>
+            <div class="hero-mascot">
+              <img src="./media/logo/Аватарка Лисенок Фокси.png" alt="Лисенок Фокси" />
+              <div>
+                <strong>Foxy</strong>
+                <span>на занятиях помогает детям учиться</span>
+              </div>
+            </div>
+            <div class="hero-note">
+              <span class="hero-note-label">Записаться можно через форму заявки или по телефону</span>
+              <strong>Бесплатная диагностика 20-30 минут</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container two-column">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Результат и любовь к языку</p>
+            <h2>Отличный результат и любовь к английскому</h2>
+          </div>
+          <div class="content-card reveal">
+            <p>
+              Мы поможем ребенку подготовиться к школе и чувствовать себя уверенно,
+              решить сложности с чтением, восприятием на слух и говорением, подтянуть
+              оценки в школе.
+            </p>
+            <p>
+              Главное для нас — привить интерес и любовь к языку, желание продолжать
+              с ним знакомство и показать, что английский может быть легким,
+              увлекательным и разнообразным.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">О нас</p>
+            <h2>Почему выбирают Happy Foxy?</h2>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="info-card reveal">
+              <span class="card-kicker">Игровой подход</span>
+              <h3>Для самых маленьких</h3>
+              <p>Дети от 4 лет осваивают английский через песни, игры, творчество и движение, воспринимая язык естественно и интуитивно.</p>
+            </article>
+            <article class="info-card reveal">
+              <span class="card-kicker">Все возрасты</span>
+              <h3>Программы для детей, подростков и взрослых</h3>
+              <p>Программы рассчитаны на малышей, школьников, старшеклассников, подготовку к ОГЭ и ЕГЭ, а также взрослых.</p>
+            </article>
+            <article class="info-card reveal">
+              <span class="card-kicker">Мини-группы</span>
+              <h3>Внимание каждому ученику</h3>
+              <p>В группах не более 6 человек: есть живое общение и соревновательный дух, но каждому хватает внимания преподавателя.</p>
+            </article>
+            <article class="info-card reveal">
+              <span class="card-kicker">Мероприятия</span>
+              <h3>Праздники, квесты и мастер-классы</h3>
+              <p>Проводим мастер-классы с чаепитием, квесты, праздники на английском, занятия по мультфильмам и летний лагерь.</p>
+            </article>
+            <article class="info-card reveal">
+              <span class="card-kicker">Foxy</span>
+              <h3>Лисенок помогает учиться</h3>
+              <p>Вместе с лисенком дети движутся по карте сокровищ, получают наклейки за успехи и в конце находят подарок от Foxy.</p>
+            </article>
+            <article class="info-card reveal">
+              <span class="card-kicker">Рядом с домом</span>
+              <h3>Железнодорожный, ул. Пионерская, 9Б</h3>
+              <p>БЦ Пионер, 2 этаж, кабинет 12. Работаем ежедневно с 09:00 до 20:00.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="programs">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Программы</p>
+            <h2>Выберите свое направление</h2>
+          </div>
+
+          <div class="programs-grid">
+            <article class="program-card reveal">
+              <span class="program-age">4+ года</span>
+              <h3>Английский для малышей</h3>
+              <p>Групповые занятия по методике Валерии Мещеряковой «I Love English»: игры, аудиозаписи, песни, движение и творчество без перевода.</p>
+            </article>
+            <article class="program-card reveal">
+              <span class="program-age">6-8 лет</span>
+              <h3>Подготовка к английскому в школе</h3>
+              <p>Курс Easy Start: чтение, базовая лексика и грамматика, письмо, игры, песни и флэшкарты для уверенного старта в школе.</p>
+            </article>
+            <article class="program-card reveal">
+              <span class="program-age">2-4 класс</span>
+              <h3>Школьный английский</h3>
+              <p>Групповые и индивидуальные занятия по британским коммуникативным учебникам Kid’s Box и GoGetter, помощь со школьной программой.</p>
+            </article>
+            <article class="program-card reveal">
+              <span class="program-age">11-17 лет</span>
+              <h3>Английский для старшеклассников</h3>
+              <p>Групповые и индивидуальные занятия, помощь со школьной программой и подготовка к ОГЭ и ЕГЭ.</p>
+            </article>
+            <article class="program-card reveal">
+              <span class="program-age">Взрослые</span>
+              <h3>Разговорный и деловой английский</h3>
+              <p>Индивидуальные занятия под ваш запрос: разговорный, деловой английский, английский для жизни и путешествий.</p>
+            </article>
+            <article class="program-card reveal">
+              <span class="program-age">Онлайн</span>
+              <h3>Занятия онлайн</h3>
+              <p>Обучение детей и взрослых онлайн под ваш запрос.</p>
+            </article>
+            <article class="program-card reveal">
+              <span class="program-age">Лагерь</span>
+              <h3>Спортивно-английские сборы</h3>
+              <p>Летний лагерь объединяет спорт и английский: тренировки, мастер-классы, квесты, дискотеки и занятия в формате киноклуба.</p>
+            </article>
+            <article class="program-card reveal">
+              <span class="program-age">События</span>
+              <h3>Мастер-классы, праздники и квесты</h3>
+              <p>Хэллоуин, Рождество, окончание учебного года, мастер-классы с чаепитием и увлекательные квесты для разных возрастов.</p>
+            </article>
+          </div>
+
+          <p class="section-footnote reveal">
+            Длительность занятия в группе — 50 минут, индивидуально — 60 минут, с малышами 4-6 лет — 40 минут.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Галерея</p>
+            <h2>Живая атмосфера занятий, квестов и мастер-классов</h2>
+          </div>
+
+          <div class="gallery-layout">
+            <figure class="gallery-feature reveal">
+              <img src="./media/gallery/Урок1.jpg" alt="Урок в Happy Foxy English Club" />
+              <figcaption>
+                <span>Уроки</span>
+                <strong>Спокойная работа, внимание и вовлеченность</strong>
+              </figcaption>
+            </figure>
+
+            <div class="gallery-grid">
+              <figure class="gallery-card reveal">
+                <img src="./media/gallery/Квест1.jpg" alt="Квест в Happy Foxy English Club" />
+                <figcaption>Квесты</figcaption>
+              </figure>
+              <figure class="gallery-card reveal">
+                <img src="./media/gallery/Лагерь1.jpg" alt="Летний лагерь Happy Foxy English Club" />
+                <figcaption>Лагерь</figcaption>
+              </figure>
+              <figure class="gallery-card reveal">
+                <img src="./media/gallery/МК1.jpg" alt="Мастер-класс Happy Foxy English Club" />
+                <figcaption>Мастер-классы</figcaption>
+              </figure>
+              <figure class="gallery-card reveal">
+                <img src="./media/gallery/Урок2.jpg" alt="Занятие в классе Happy Foxy English Club" />
+                <figcaption>Занятия</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="gallery-strip">
+            <figure class="gallery-thumb reveal">
+              <img src="./media/gallery/Квест4.jpg" alt="Квест Happy Foxy English Club" />
+            </figure>
+            <figure class="gallery-thumb reveal">
+              <img src="./media/gallery/Квест8.jpg" alt="Квест Happy Foxy English Club" />
+            </figure>
+            <figure class="gallery-thumb reveal">
+              <img src="./media/gallery/МК2.jpg" alt="Мастер-класс Happy Foxy English Club" />
+            </figure>
+            <figure class="gallery-thumb reveal">
+              <img src="./media/gallery/Квест12.jpg" alt="Квест Happy Foxy English Club" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="teachers">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Преподаватели</p>
+            <h2>Наши преподаватели</h2>
+          </div>
+
+          <div class="teachers-grid">
+            <article class="teacher-card reveal">
+              <div class="teacher-photo">
+                <img class="teacher-photo-anzhelika" src="./media/teachers/Фото Анжелика.jpg" alt="Журавская Анжелика Сергеевна" />
+              </div>
+              <div class="teacher-body">
+                <h3>Журавская Анжелика Сергеевна</h3>
+                <p class="teacher-meta">Опыт работы с 2014 года</p>
+                <p>
+                  Образование: МГУ им. М. В. Ломоносова, факультет иностранных языков и
+                  регионоведения.
+                </p>
+              </div>
+            </article>
+
+            <article class="teacher-card reveal">
+              <div class="teacher-photo">
+                <img class="teacher-photo-daria" src="./media/teachers/Портретное Фото Дарья.jpg" alt="Огнева Дарья Михайловна" />
+              </div>
+              <div class="teacher-body">
+                <h3>Огнева Дарья Михайловна</h3>
+                <p class="teacher-meta">Опыт работы более 6 лет</p>
+                <p>
+                  Бакалавр МГЛУ им. Мориса Тореза с отличием по направлению «Теория и
+                  методика преподавания иностранных языков и культур». Магистр МПГУ
+                  по направлению «Педагогический дизайн». Дополнительное образование:
+                  базовый курс по методике Мещеряковой. Работает с группами и
+                  индивидуально, в том числе с дошкольниками.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="reviews">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Отзывы</p>
+            <h2>Что говорят наши ученики и их родители</h2>
+          </div>
+
+          <div class="review-carousel reveal" data-carousel>
+            <div class="review-carousel-viewport">
+              <div class="review-carousel-track">
+                <figure class="review-slide review-placeholder">
+                  <img src="./media/reviews/review-1.png" alt="Отзыв 1" loading="lazy" />
+                </figure>
+                <figure class="review-slide review-placeholder">
+                  <img src="./media/reviews/review-2.png" alt="Отзыв 2" loading="lazy" />
+                </figure>
+                <figure class="review-slide review-placeholder">
+                  <img src="./media/reviews/review-3.png" alt="Отзыв 3" loading="lazy" />
+                </figure>
+                <figure class="review-slide review-placeholder">
+                  <img src="./media/reviews/review-4.png" alt="Отзыв 4" loading="lazy" />
+                </figure>
+                <figure class="review-slide review-placeholder">
+                  <img src="./media/reviews/review-5.png" alt="Отзыв 5" loading="lazy" />
+                </figure>
+                <figure class="review-slide review-placeholder">
+                  <img src="./media/reviews/review-6.png" alt="Отзыв 6" loading="lazy" />
+                </figure>
+              </div>
+            </div>
+
+            <div class="review-carousel-bar">
+              <div class="review-carousel-dots" aria-label="Навигация по отзывам"></div>
+              <div class="review-carousel-buttons">
+                <button class="review-carousel-btn" type="button" data-carousel-prev aria-label="Предыдущий отзыв">←</button>
+                <button class="review-carousel-btn" type="button" data-carousel-next aria-label="Следующий отзыв">→</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section" id="contacts">
+        <div class="container cta-grid">
+          <div class="cta-copy reveal">
+            <p class="eyebrow">Контакты</p>
+            <h2>Начните учить английский весело и легко</h2>
+            <p>
+              Приходите на бесплатную диагностику (20-30 минут), мы познакомимся,
+              определим ваш уровень и подберем оптимальную группу.
+            </p>
+            <div class="contact-list">
+              <a href="tel:+79104906958">+7 (910) 490-69-58</a>
+              <a href="https://t.me/happyfoxyclub" target="_blank" rel="noreferrer">Telegram</a>
+              <a href="https://vk.ru/happyfoxyclub" target="_blank" rel="noreferrer">VK</a>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <h3>Адрес</h3>
+            <p>
+              г. Балашиха, мкр. Железнодорожный, ул. Пионерская, 9Б, БЦ Пионер, 2 этаж,
+              кабинет 12
+            </p>
+            <p class="contact-card-note">Работаем ежедневно с 09:00 до 20:00.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Happy Foxy English Club</p>
+        <p>г. Балашиха, Железнодорожный</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
