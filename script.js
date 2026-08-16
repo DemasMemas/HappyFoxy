@@ -140,15 +140,10 @@ if (form) {
       status.classList.remove("is-error", "is-success");
     }
 
-    formData.set("form-name", form.getAttribute("name") || "lead");
-
-    fetch(form.action || "/", {
+    fetch(form.action, {
       method: "POST",
-      body: new URLSearchParams(formData).toString(),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
+      body: formData,
+      headers: { Accept: "application/json" },
     })
       .then(async (response) => {
         const data = await response.json().catch(() => ({}));
