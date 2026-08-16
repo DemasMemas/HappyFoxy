@@ -54,7 +54,8 @@
               <a class="button button-ghost" href="tel:+79104906958">Позвонить</a>
             </div>
 
-            <form class="lead-form" id="lead-form" action="./send.php" method="post">
+            <form class="lead-form" id="lead-form" name="lead" action="/" method="post" data-netlify="true">
+              <input type="hidden" name="form-name" value="lead" />
               <div class="lead-form-header">
                 <span class="lead-form-kicker">Бесплатная диагностика</span>
                 <p>Оставьте заявку, и мы свяжемся с вами по телефону.</p>
