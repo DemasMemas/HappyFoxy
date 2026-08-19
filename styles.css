@@ -376,13 +376,6 @@ select {
   opacity: 0.72;
 }
 
-.hero-points {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.point-card,
 .content-card,
 .info-card,
 .program-card,
@@ -393,21 +386,6 @@ select {
   border: 1px solid var(--line);
   box-shadow: var(--shadow-soft);
   border-radius: var(--radius-lg);
-}
-
-.point-card {
-  padding: 18px;
-}
-
-.point-card strong {
-  display: block;
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-}
-
-.point-card span {
-  color: var(--muted);
-  line-height: 1.5;
 }
 
 .hero-visual {
@@ -444,68 +422,6 @@ select {
 .teacher-photo-anzhelika {
   object-position: 24% 50%;
   transform: translateX(-6%) scale(1.18);
-}
-
-.hero-mascot {
-  position: absolute;
-  left: -14px;
-  bottom: 112px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  max-width: 278px;
-  padding: 12px 14px 12px 12px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(16px);
-}
-
-.hero-mascot img {
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex: 0 0 auto;
-  background: #fff;
-  border: 1px solid rgba(64, 46, 29, 0.08);
-}
-
-.hero-mascot strong {
-  display: block;
-  font-size: 0.98rem;
-  margin-bottom: 4px;
-}
-
-.hero-mascot span {
-  display: block;
-  color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.35;
-}
-
-.hero-note {
-  position: absolute;
-  right: 22px;
-  bottom: -22px;
-  max-width: 280px;
-  padding: 18px 20px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.93);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
-}
-
-.hero-note-label {
-  display: block;
-  margin-bottom: 10px;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
-.hero-note strong {
-  font-size: 1.02rem;
 }
 
 .section-heading {
@@ -1154,7 +1070,6 @@ select {
   }
 
   .lead-form-grid,
-  .hero-points,
   .benefits-grid,
   .programs-grid,
   .reviews-grid,
@@ -1192,33 +1107,6 @@ select {
 
   .hero-copy h1 {
     max-width: 18ch;
-  }
-
-  .hero-note {
-    position: static;
-    margin-top: 10px;
-    padding: 14px 16px;
-    border-radius: 18px;
-    max-width: none;
-  }
-
-  .hero-mascot {
-    position: static;
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px 12px;
-    gap: 10px;
-    max-width: none;
-    border-radius: 24px;
-  }
-
-  .hero-mascot img {
-    width: 48px;
-    height: 48px;
-  }
-
-  .hero-mascot span {
-    font-size: 0.82rem;
   }
 
   .footer-inner {
